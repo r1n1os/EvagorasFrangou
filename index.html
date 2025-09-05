@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Evagoras Frangou</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="toggle-container top-right">
+      <span id="mode-label">Dark Mode</span>
+      <label class="switch">
+        <input type="checkbox" id="mode-toggle" checked>
+        <span class="slider round"></span>
+      </label>
+    </div>
+
+    <section class="hero centered">
+      <img src="images/profle_image.jpg" alt="Profile" class="profile-pic">
+      <h1>Hi, I'm Evagoras Frangou (r1n1os)</h1>
+      <p class="subtitle">Senior Software Engineer • Android & Flutter Developer</p>
+      <div class="links">
+        <a href="https://github.com/r1n1os" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/evagoras-frangou-14a7b2163/" target="_blank">LinkedIn</a>
+        <a href="mailto:evagoras.dev@gmail.com">Email</a>
+      </div>
+    </section>
+
+    <section class="content centered">
+      <h2>About Me</h2>
+      <p>
+       I am Evagoras Frangou, a passionate and ambitious software engineer with over five years of experience in mobile application development. My expertise spans native Android development using Kotlin, as well as cross-platform development with the Flutter framework for both Android and iOS.
+       Currently, I serve as a Senior Software Engineer and Team Lead, where I leverage my professional expertise in Kotlin, and Dart to drive project success and innovation.
+      </p>
+    </section>
+
+   <section class="projects centered">
+      <h2>Libraries</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="images/sliding_action_button_example.gif" alt="Project 1" width = "120" height = "150">
+          <h3>Slide action button - Flutter Package</h3>
+          <p>Slide action button package developed to provide an easy way to flutter developers implemending button that slides to perform an action. It is customizable by providing the option to change button container color, adding custom icon to draggable buttons, enable or disable button with applying different color per status.</p>
+        </div>
+      </div>
+    </section>
+
+ <section class="projects centered">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+	  <a href="https://github.com/r1n1os/pokedex-flutter" target="Pokemon - Flutter">
+             <img src="images/pokemon_project.png" alt="Project 1"  width = "150" height = "150">
+             <h3>Pokemon - Flutter</h3>
+             <p>Pokedex-Flutter was developed to showcase various modern Flutter development toolkits such as Bloc state management, Dio for network requests etc.</p>
+	  </a>        
+	</div>
+        <div class="project-card">
+          <img src="images/project2.jpg" alt="Project 2">
+          <h3>Project 2</h3>
+          <p>A brief description here.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills centered">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <span>Kotlin</span><span>Flutter</span><span>Dart</span><span>Firebase</span>
+      </div>
+    </section>
+
+    <section class="contact centered">
+      <h2>Let's Connect</h2>
+      <a href="mailto:evagoras.dev@gmail.com" class="btn">Contact Me</a>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Evagoras Frangou
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
