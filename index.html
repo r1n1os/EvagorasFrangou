@@ -5,13 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Evagoras Frangou</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Devicon (Tech icons) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+  <!-- Font Awesome (Social icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
   </style>
 </head>
 <body>
+    <!-- Toggle Dark/Light -->
     <div class="toggle-container top-right">
       <span id="mode-label">Dark Mode</span>
       <label class="switch">
@@ -20,6 +30,7 @@
       </label>
     </div>
 
+    <!-- Sidebar Menu -->
     <nav class="side-menu">
         <a href="#hero" class="menu-item">Home</a>
         <a href="#projects" class="menu-item">Projects</a>
@@ -28,70 +39,86 @@
     </nav>
 
     <div class="container">
+      <!-- Hero -->
       <section id="hero" class="hero centered">
         <img src="images/profle_image.jpg" alt="Profile" class="profile-pic">
         <h1>Hi, I'm Evagoras Frangou (r1n1os)</h1>
         <p class="subtitle">Senior Software Engineer • Android & Flutter Developer</p>
         <div class="links">
-          <a href="https://github.com/r1n1os" target="_blank">GitHub</a>
-          <a href="https://www.linkedin.com/in/evagoras-frangou-14a7b2163/" target="_blank">LinkedIn</a>
-          <a href="mailto:evagoras.dev@gmail.com">Email</a>
+          <a href="https://github.com/r1n1os" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+          <a href="https://www.linkedin.com/in/evagoras-frangou-14a7b2163/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          <a href="mailto:evagoras.dev@gmail.com"><i class="fas fa-envelope"></i> Email</a>
         </div>
       </section>
 
+      <!-- About -->
       <section id="about" class="content centered">
         <h2>About Me</h2>
         <p>
-         I am Evagoras Frangou, a passionate and ambitious software engineer with over five years of experience in mobile application development. My expertise spans native Android development using Kotlin, as well as cross-platform development with the Flutter framework for both Android and iOS.
-         Currently, I serve as a Senior Software Engineer and Team Lead, where I leverage my professional expertise in Kotlin, and Dart to drive project success and innovation.
+         I am a passionate and ambitious software engineer with over five years of experience in mobile application development.  
+         My expertise spans native Android development using Kotlin, as well as cross-platform development with Flutter for both Android and iOS.  
+         Currently, I serve as a Senior Software Engineer and Team Lead, leveraging Kotlin and Dart to drive project success and innovation.
         </p>
       </section>
 
-     <section id="libraries" class="projects centered">
+      <!-- Libraries -->
+      <section id="libraries" class="projects centered">
         <h2>Libraries</h2>
         <div class="project-grid">
           <div class="project-card">
-            <img src="images/sliding_action_button_example.gif" alt="Project 1" width="120" height="150">
-            <h3>Slide action button - Flutter Package</h3>
-            <p>Slide action button package developed to provide an easy way to flutter developers implemending button that slides to perform an action. It is customizable by providing the option to change button container color, adding custom icon to draggable buttons, enable or disable button with applying different color per status.</p>
+            <img src="images/sliding_action_button_example.gif" alt="Slide Action Button - Flutter Package">
+            <h3>Slide Action Button - Flutter Package</h3>
+            <p>A customizable Flutter package for implementing slide-to-act buttons. Developers can adjust colors, icons, and button states with ease.</p>
           </div>
         </div>
       </section>
 
+      <!-- Projects -->
       <section id="projects" class="projects centered">
         <h2>Projects</h2>
         <div class="project-grid">
           <div class="project-card">
-            <a href="https://github.com/r1n1os/pokedex-flutter" target="Pokemon - Flutter">
-               <img src="images/pokemon_project.png" alt="Project 1" width="150" height="150">
+            <a href="https://github.com/r1n1os/pokedex-flutter" target="_blank">
+               <img src="images/pokemon_project.png" alt="Pokemon - Flutter">
                <h3>Pokemon - Flutter</h3>
-               <p>Pokedex-Flutter was developed to showcase various modern Flutter development toolkits such as Bloc state management, Dio for network requests etc.</p>
+               <p>Showcases modern Flutter toolkits such as Bloc state management, Dio for networking, and clean architecture practices.</p>
             </a>
           </div>
           <div class="project-card">
-            <a href="https://github.com/r1n1os/Pokedex-Android" target="Pokemon - Android">
-               <img src="images/pokemon_project.png" alt="Project 1" width="150" height="150">
+            <a href="https://github.com/r1n1os/Pokedex-Android" target="_blank">
+               <img src="images/pokemon_project.png" alt="Pokemon - Android">
                <h3>Pokemon - Android</h3>
-               <p>Pokedex-Flutter was developed to showcase various modern Flutter development toolkits such as Bloc state management, Dio for network requests etc.</p>
+               <p>A native Android version of the Pokedex, built with Kotlin, coroutines, and MVVM to highlight modern Android development patterns.</p>
             </a>
           </div>
         </div>
       </section>
 
+      <!-- Skills -->
       <section id="skills" class="skills centered">
         <h2>Skills</h2>
         <div class="skills-grid">
-          <span>Kotlin</span><span>Flutter</span><span>Dart</span><span>Firebase</span>
+          <span><i class="devicon-kotlin-plain colored"></i> Kotlin</span>
+          <span><i class="devicon-flutter-plain colored"></i> Flutter</span>
+          <span><i class="devicon-dart-plain colored"></i> Dart</span>
+          <span><i class="devicon-firebase-plain colored"></i> Firebase</span>
+          <span><i class="devicon-android-plain colored"></i> Android SDK</span>
+          <span><i class="fas fa-cloud"></i> REST APIs</span>
         </div>
       </section>
 
+      <!-- Contact -->
       <section id="contact" class="contact centered">
-        <h2>Let's Connect</h2>
-        <a href="mailto:evagoras.dev@gmail.com" class="btn">Contact Me</a>
+        <!-- <h2>Let’s Work Together</h2> -->
+             <h2>Contact</h2>
+        <!-- <p>Interested in collaborating or hiring me for freelance projects?</p> -->
+        <a href="mailto:evagoras.dev@gmail.com" class="btn"><i class="fas fa-paper-plane"></i> Get in Touch</a>
       </section>
 
-      <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">▲</button>
+      <!-- Scroll to Top -->
+      <button id="scrollToTopBtn" title="Go to top">▲</button>
 
+      <!-- Footer -->
       <footer>
         © <span id="year"></span> Evagoras Frangou
       </footer>

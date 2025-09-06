@@ -4,10 +4,10 @@ const label = document.getElementById('mode-label');
 const yearSpan = document.getElementById('year');
 const scrollToTopBtn = document.getElementById('scrollToTopBtn');
 
-// Set the current year in the footer
+// Footer year
 yearSpan.textContent = new Date().getFullYear();
 
-// This function correctly adds or removes the 'light-mode' class
+// Dark/Light toggle
 toggle.addEventListener('change', () => {
     if (toggle.checked) {
         body.classList.remove('light-mode');
@@ -18,7 +18,7 @@ toggle.addEventListener('change', () => {
     }
 });
 
-// Scroll to Top functionality
+// Scroll to top button visibility
 window.onscroll = function() {
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
         scrollToTopBtn.style.display = "block";
@@ -27,8 +27,8 @@ window.onscroll = function() {
     }
 };
 
-// When the user clicks on the button, scroll to the top of the document
+// Scroll to top functionality
 scrollToTopBtn.addEventListener('click', () => {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 });
